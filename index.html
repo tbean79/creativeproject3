@@ -23,11 +23,21 @@
     <body>
 
         
-        
+        <h2>MARVEL ENCYCLOPEDIA</h2>
         
         <div id="root">
             
+            <p>
             <input type="text" v-model="query">
+                
+            Search:
+            <button v-on:click="searchCharacters">Characters</button>
+            <button v-on:click="searchComics">Comics</button>
+            <button v-on:click="searchCreators">Creators</button>
+            <button v-on:click="searchSeries">Series</button>
+            <button v-on:click="searchEvents">Events</button>
+            
+            </p>
             
             <p>{{ results }}</p>
         </div>
