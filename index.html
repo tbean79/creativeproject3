@@ -23,23 +23,15 @@
     <body>
 
         
-        <h2>MARVEL ENCYCLOPEDIA</h2>
+        <h2>PICK ME UP .com</h2>
         
-        <div id="root">
+        <div class="" id="root">
             
-            <p>
-            <input type="text" v-model="query">
-                
-            Search:
-            <button v-on:click="searchCharacters">Characters</button>
-            <button v-on:click="searchComics">Comics</button>
-            <button v-on:click="searchCreators">Creators</button>
-            <button v-on:click="searchSeries">Series</button>
-            <button v-on:click="searchEvents">Events</button>
             
-            </p>
+                <button class = "button" v-on:click="motivateUser" v-model="button"></button>
             
-            <p>{{ results }}</p>
+            
+            <p class="results">{{ results }}</p>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
