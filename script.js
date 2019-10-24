@@ -23,7 +23,12 @@ let app = new Vue({
        5: "We Generate Fears While We Sit. We Overcome Them By Action.  -Dr. Henry Link",
        6: "The Man Who Has Confidence In Himself Gains The Confidence Of Others.  -Hasidic Proverb",
        7: "Faith is not so much something we believe; faith is something we live.  -Joseph B. Wirthlin",
-       8: "God not only loves the obedient - He enlightens them.  -Henry B. Eyring"
+       8: "God not only loves the obedient - He enlightens them.  -Henry B. Eyring",
+       9: "They always say time changes things, but you actually have to change them yourself. -Andy Warhol",
+       10: "Remember there’s no such thing as a small act of kindness. Every act creates a ripple with no logical end. -Scott Adams",
+       11: "Kindness is like snow- It beautifies everything it covers. -Kahlil Gibran",
+       12: "Having somewhere to go is home. Having someone to love is family. And having both is a blessing.",
+       13: "Manners and politeness will never become old-fashioned.  -Auliq Ice"
      }
   },
   created() 
@@ -34,7 +39,7 @@ let app = new Vue({
   {
     motivateUser()
     {
-      var rando = Math.random() * 8;
+      var rando = Math.random() * 13;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
