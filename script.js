@@ -1,10 +1,17 @@
-/*global Vue*/
 
 let app = new Vue({
+
   // bind it to the #root div in the DOM
-  el: "#root",
+  el: "#app",
   // provide data for bindings
   data: {
+            number: 1,
+        image: '',
+        current: {
+            id: '',
+            name: '',
+            description: '',
+        },
      results: '',
      button: 'Feeling Down?',
      quotes:
@@ -19,6 +26,10 @@ let app = new Vue({
        8: "God not only loves the obedient - He enlightens them.  -Henry B. Eyring"
      }
   },
+  created() 
+  {
+    this.images(); 
+  },
   methods:
   {
     motivateUser()
@@ -26,7 +37,58 @@ let app = new Vue({
       var rando = Math.random() * 8;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
-      this.button = 'Not Doing it for Ya?'
+      console.log("Hello?")
+    },
+    images() {
+          axios.get('https://picsum.photos/id/' + this.number + '/info')
+            .then(response => {
+                this.current = response.data;
+                this.current.width = 500;
+                this.current.height = 500;
+                this.current.download_url = 'https://picsum.photos/id/' + this.number + '/1000';
+                console.log(this.number);
+                console.log(this.current);
+                return true;
+            })
+            .catch(error => {
+                console.log(error);
+            });
+      },
+      previousImage() {
+        var rando = Math.random() * 8;
+      rando = Math.ceil(rando);
+      this.results = this.quotes[rando];
+      console.log("Hello?")
+          this.number--;
+        if (this.number < 1)
+            this.number = 1;
+        
+    },
+    nextImage() {
+      var rando = Math.random() * 8;
+      rando = Math.ceil(rando);
+      this.results = this.quotes[rando];
+      console.log("Hello?")
+        this.number++;
+    },
+    
+    randomComic() {
+      var rando = Math.random() * 8;
+      rando = Math.ceil(rando);
+      this.results = this.quotes[rando];
+      console.log("Hello?")
+      var rando = Math.random() * 1000;
+      rando = Math.ceil(rando);
+      this.number = rando;
+    },
+  },
+  watch: {
+    number(value, oldvalue) {
+      if (oldvalue === '') {
+        this.number = 1;
+      } else {
+        this.images();
+      }
     }
   }
 });

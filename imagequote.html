@@ -22,13 +22,18 @@
     
     <body>
         <h2>PICK ME UP .com</h2>
-        
-        <div id="app">
-            
-            
-                <a href="imagequote.html"><button class = "button" v-on:click="motivateUser" v-model="button">Feeling Down?</button></a>
+         <div id="app">
+            <p>
+            <button v-on:click="previousImage" v-on:click="motivateUser">Previous</button>
+            <button v-on:click="nextImage" v-on:click="motivateUser">Next</button>
+            <button v-on:click="randomComic" v-on:click="motivateUser">Random</button>
+            </p>
+            <img v-bind:src="current.download_url">
+            <p class="results">{{ results }}</p>
+
             
         </div>
+        
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
