@@ -35,7 +35,12 @@ let app = new Vue({
        17: "No boundary or barrier surrounds the heart of a person that loves their self and others. -Shannon L. Alder",
        18: "If you think you are too small to make a difference, try sleeping with a mosquito.  -Dalai Lama",
        19: "I am an early bird and a night owl… so I am wise and I have worms  -Michael Scott",
-       20: "I love making new friends and I respect people for a lot of different reasons. -Taylor Swift"
+       20: "I love making new friends and I respect people for a lot of different reasons. -Taylor Swift",
+       21: "When adversity strikes, that's when you have to be the most calm. Take a step back, stay strong, stay grounded and press on. -LL Cool J",
+       22: "It takes strength to be kind; it's not a weakness. -Daniel Lubetzky",
+       23: "Worry does not empty tomorrow of its sorrow, it empties today of its strength. -Corrie Ten Boom",
+       24: "When your friends begin to flatter you on how young you look, it's a sure sign you're getting old. -Mark Twain",
+       25: "Ringo wasn’t the best drummer in the world… Let’s face it, he wasn’t even the best drummer in The Beatles. -John Lennon"
      }
   },
   created() 
@@ -46,7 +51,7 @@ let app = new Vue({
   {
     motivateUser()
     {
-      var rando = Math.random() * 20;
+      var rando = Math.random() * 25;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -67,7 +72,7 @@ let app = new Vue({
             });
       },
       previousImage() {
-        var rando = Math.random() * 20;
+        var rando = Math.random() * 25;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -77,7 +82,7 @@ let app = new Vue({
         
     },
     nextImage() {
-      var rando = Math.random() * 20;
+      var rando = Math.random() * 25;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -85,7 +90,7 @@ let app = new Vue({
     },
     
     randomComic() {
-      var rando = Math.random() * 20;
+      var rando = Math.random() * 25;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
