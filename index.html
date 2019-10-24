@@ -20,7 +20,17 @@
     </head>
     
     <body>
-
+        <h1>Image Browser</h1>
+         <div id="app">
+            <p>
+            <button v-on:click="previousImage">Previous</button>
+            <button v-on:click="nextImage">Next</button>
+            <button v-on:click="randomComic">Random</button>
+            </p>
+            <img v-bind:src="current.download_url">
+            
+            
+        </div>
         
         
         
