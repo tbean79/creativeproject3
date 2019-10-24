@@ -28,7 +28,14 @@ let app = new Vue({
        10: "Remember there’s no such thing as a small act of kindness. Every act creates a ripple with no logical end. -Scott Adams",
        11: "Kindness is like snow- It beautifies everything it covers. -Kahlil Gibran",
        12: "Having somewhere to go is home. Having someone to love is family. And having both is a blessing.",
-       13: "Manners and politeness will never become old-fashioned.  -Auliq Ice"
+       13: "Manners and politeness will never become old-fashioned.  -Auliq Ice",
+       14: "Life is not a fairy tale.  If you lose your shoe at midnight, you're drunk",
+       15: "You get all the French fries the President can't get to.  -Al Gore",
+       16: "Her heart was a secret garden and the walls were very high. -William Goldman",
+       17: "No boundary or barrier surrounds the heart of a person that loves their self and others. -Shannon L. Alder",
+       18: "If you think you are too small to make a difference, try sleeping with a mosquito.  -Dalai Lama",
+       19: "I am an early bird and a night owl… so I am wise and I have worms  -Michael Scott",
+       20: "I love making new friends and I respect people for a lot of different reasons. -Taylor Swift"
      }
   },
   created() 
@@ -39,7 +46,7 @@ let app = new Vue({
   {
     motivateUser()
     {
-      var rando = Math.random() * 13;
+      var rando = Math.random() * 20;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -60,7 +67,7 @@ let app = new Vue({
             });
       },
       previousImage() {
-        var rando = Math.random() * 8;
+        var rando = Math.random() * 20;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -70,7 +77,7 @@ let app = new Vue({
         
     },
     nextImage() {
-      var rando = Math.random() * 8;
+      var rando = Math.random() * 20;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
@@ -78,7 +85,7 @@ let app = new Vue({
     },
     
     randomComic() {
-      var rando = Math.random() * 8;
+      var rando = Math.random() * 20;
       rando = Math.ceil(rando);
       this.results = this.quotes[rando];
       console.log("Hello?")
