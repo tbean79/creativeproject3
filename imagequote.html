@@ -27,12 +27,14 @@
 
              
             <p class="button">
-            <button v-on:click="previousImage" v-on:click="motivateUser">Previous</button>
-            <button v-on:click="nextImage" v-on:click="motivateUser">Next</button>
-            <button v-on:click="randomComic" v-on:click="motivateUser">Random</button>
+            
+           
+            <button v-on:click="randomComic" v-on:click="motivateUser"><div class="buttonrandom">Random</div></button>
 
             </p>
             <div class="container">
+                <button v-on:click="previousImage" v-on:click="motivateUser"><div class="buttonleft">Previous</div></button>
+                 <button v-on:click="nextImage" v-on:click="motivateUser"><div class="buttonright">Next</div></button>
             <img v-bind:src="current.download_url">
             <div class="centered"><p class="results">{{ results }}</p></div>
             </div>
@@ -44,13 +46,13 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="script.js"></script>    
-        <!--<footer class="page-footer fixed-bottom">
+        <footer class="page-footer fixed-bottom">
         
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light " style="background: rgba(0,0,0,0.4); height: 60px;">
                 <a href="https://github.com/tbean79/creativeproject3.git">Github Repo</a>
             </nav>
         
-        </footer>-->
+        </footer>
         
     </body>
 </html>
