@@ -13,7 +13,7 @@ let app = new Vue({
             description: '',
         },
      results: '',
-     button: 'Feeling Down?',
+     
      quotes:
      {
        1: "Someone I loved once gave me a box full of darkness. It took me years to understand that this too, was a gift. -Mary Oliver",
