@@ -16,20 +16,24 @@
 
         
         <!--Links to CSS Stylesheets-->
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
         
     </head>
     
     <body>
-        <h2>PICK ME UP .com</h2>
+        <h1>PICK ME UP .com</h1>
          <div id="app">
-            <p>
+             
+            <p class="button">
             <button v-on:click="previousImage" v-on:click="motivateUser">Previous</button>
             <button v-on:click="nextImage" v-on:click="motivateUser">Next</button>
             <button v-on:click="randomComic" v-on:click="motivateUser">Random</button>
             </p>
+            <div class="container">
             <img v-bind:src="current.download_url">
-            <p class="results">{{ results }}</p>
+            <div class="centered"><p class="results">{{ results }}</p></div>
+            </div>
 
             
         </div>
@@ -38,13 +42,13 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="script.js"></script>    
-        <footer class="page-footer fixed-bottom">
+        <!--<footer class="page-footer fixed-bottom">
         
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light " style="background: rgba(0,0,0,0.4); height: 60px;">
                 <a href="https://github.com/tbean79/creativeproject3.git">Github Repo</a>
             </nav>
         
-        </footer>
+        </footer>-->
         
     </body>
 </html>
