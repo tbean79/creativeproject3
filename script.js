@@ -5,7 +5,7 @@ let app = new Vue({
   el: "#app",
   // provide data for bindings
   data: {
-            number: 1,
+            number: 89,
         image: '',
         current: {
             id: '',
@@ -25,7 +25,7 @@ let app = new Vue({
        7: "Faith is not so much something we believe; faith is something we live.  -Joseph B. Wirthlin",
        8: "God not only loves the obedient - He enlightens them.  -Henry B. Eyring",
        9: "They always say time changes things, but you actually have to change them yourself. -Andy Warhol",
-       10: "Remember there’s no such thing as a small act of kindness. Every act creates a ripple with no logical end. -Scott Adams",
+       10: "Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end. -Scott Adams",
        11: "Kindness is like snow- It beautifies everything it covers. -Kahlil Gibran",
        12: "Having somewhere to go is home. Having someone to love is family. And having both is a blessing.",
        13: "Manners and politeness will never become old-fashioned.  -Auliq Ice",
@@ -34,13 +34,13 @@ let app = new Vue({
        16: "Her heart was a secret garden and the walls were very high. -William Goldman",
        17: "No boundary or barrier surrounds the heart of a person that loves their self and others. -Shannon L. Alder",
        18: "If you think you are too small to make a difference, try sleeping with a mosquito.  -Dalai Lama",
-       19: "I am an early bird and a night owl… so I am wise and I have worms  -Michael Scott",
+       19: "I am an early bird and a night owl, so I am wise and I have worms  -Michael Scott",
        20: "I love making new friends and I respect people for a lot of different reasons. -Taylor Swift",
        21: "When adversity strikes, that's when you have to be the most calm. Take a step back, stay strong, stay grounded and press on. -LL Cool J",
        22: "It takes strength to be kind; it's not a weakness. -Daniel Lubetzky",
        23: "Worry does not empty tomorrow of its sorrow, it empties today of its strength. -Corrie Ten Boom",
        24: "When your friends begin to flatter you on how young you look, it's a sure sign you're getting old. -Mark Twain",
-       25: "Ringo wasn’t the best drummer in the world… Let’s face it, he wasn’t even the best drummer in The Beatles. -John Lennon"
+       25: "Ringo wasn't the best drummer in the world. Let's face it, he wasn't even the best drummer in The Beatles. -John Lennon"
      }
   },
   created() 
@@ -70,6 +70,7 @@ let app = new Vue({
             .catch(error => {
                 console.log(error);
             });
+
       },
       previousImage() {
         var rando = Math.random() * 25;
