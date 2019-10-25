@@ -23,23 +23,23 @@
     
     <body>
         <h1>PICK ME UP .com</h1>
-         <div id="app" v-on:load="motivateUser">
-
+        <div id="app" v-on:load="motivateUser">
+        
              
-            <p class="button">
             
            
-            <button v-on:click="randomComic" v-on:click="motivateUser"><div class="buttonrandom">Random</div></button>
-
-            </p>
+            <div style="text-align: center;"><div v-on:click="randomComic" v-on:click="motivateUser" class="buttonrandom">Random</div></div>
+            
             <div class="container">
 
-                <button v-on:click="previousImage" v-on:click="motivateUser"><div class="buttonleft">Previous</div></button>
-                 <button v-on:click="nextImage" v-on:click="motivateUser"><div class="buttonright">Next</div></button>
+                <div v-on:click="previousImage" v-on:click="motivateUser" class="buttonleft">Previous</div>
+                <div v-on:click="nextImage" v-on:click="motivateUser" class="buttonright">Next</div>
+                
             <img v-bind:src="current.download_url">
             <div class="centered"><p class="results">{{ results }}</p></div>
             </div>
-
+            
+            
             
         </div>
         
