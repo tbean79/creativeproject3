@@ -24,9 +24,9 @@
         <h2>PICK ME UP .com</h2>
          <div id="app">
             <p>
-            <button v-on:click="previousImage" v-on:click="motivateUser">Previous</button>
-            <button v-on:click="nextImage" v-on:click="motivateUser">Next</button>
-            <button v-on:click="randomComic" v-on:click="motivateUser">Random</button>
+            <button class="nav-buttons" v-on:click="previousImage" v-on:click="motivateUser">Previous</button>
+            <button class="nav-buttons" v-on:click="nextImage" v-on:click="motivateUser">Next</button>
+            <button class="nav-buttons" v-on:click="randomComic" v-on:click="motivateUser">Random</button>
             </p>
             <img v-bind:src="current.download_url">
             <p class="results">{{ results }}</p>
