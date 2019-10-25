@@ -53,33 +53,40 @@ p {
 }
 .buttonleft {
     position: absolute;
-   left: -150px;
+   left: -15%;
    top: 50%;
     border: none;
     color: green;
     content: url("images/Larrow.png");
-    width: 200px;
-    height: 200px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 50%;
+    height: 50%;
 }
 .buttonright {
-   position: absolute;
-   right: -150px;
+    position: absolute;
+
+   right: -15%;
    top: 50%;
     border: none;
     color: green;
     content: url("images/Rarrow.png");
-    width: 200px;
-    height: 200px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 50%;
+    height: 50%;
 }
 .buttonrandom {
-  position: absolute;
+    position: absolute;
   top: 10%;
   left: 48%;
   border: solid;
     color: green;
     content: url("images/random.jpg");
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 50%;
+    height: 50%;
 }
 .nav-buttons {
     background-color: #4CAF50;
