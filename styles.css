@@ -1,28 +1,4 @@
-<<<<<<< HEAD
-.button {
-    position: absolute;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    justify-content: center;
 
-    top: 50%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    
-    width: 150px;
-    height: 60px;
-
-
-}
-
-.nav-buttons {
-    background-color: #4CAF50;
-    color: white;
-     border: none;
-
-=======
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -71,8 +47,11 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .results {
-  font-size: 50px;
+  font-size: 4vw;
   font-weight: bold;
->>>>>>> e674ab771af09aa8234f35444ccce0ed7fc51e17
+  word-wrap: break-word;
+
 }
+

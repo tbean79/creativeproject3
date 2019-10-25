@@ -47,6 +47,9 @@ let app = new Vue({
   {
     this.images(); 
   },
+  beforeMount(){
+    this.motivateUser()
+  },
   methods:
   {
     motivateUser()
@@ -70,7 +73,6 @@ let app = new Vue({
             .catch(error => {
                 console.log(error);
             });
-
       },
       previousImage() {
         var rando = Math.random() * 25;
